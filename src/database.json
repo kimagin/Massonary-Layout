@@ -1,0 +1,145 @@
+{
+  "images": [
+    {
+      "name": "Composition B",
+      "artist": "Vasily Kandinsky",
+      "src": "https://i0.wp.com/bookmypainting.com/wp-content/uploads/2019/06/composition-8-2.jpeg?resize=569%2C394&ssl=1"
+    },
+    {
+      "name": "Starry Night",
+      "artist": "Vincent van Gogh",
+      "src": "https://i0.wp.com/bookmypainting.com/wp-content/uploads/2019/06/starry-night-the-famous-painting-2.jpeg?resize=555%2C462&ssl=1"
+    },
+    {
+      "name": "Beheading of Saint John the Baptist",
+      "artist": "Caravaggio",
+      "src": "https://i0.wp.com/bookmypainting.com/wp-content/uploads/2019/06/beheading-of-saint-john-the-baptist-the-famous-pai-2.jpeg?resize=555%2C385&ssl=1"
+    },
+    {
+      "name": "Guernica",
+      "artist": "Pablo Picasso",
+      "src": "https://i0.wp.com/bookmypainting.com/wp-content/uploads/2019/06/guernica-the-famous-painting-2.jpeg?resize=1080%2C480&ssl=1"
+    },
+    {
+      "name": "The Persistence of Memory",
+      "artist": "Salvador Dalí",
+      "src": "https://i0.wp.com/bookmypainting.com/wp-content/uploads/2019/06/the-persistence-of-memory-the-famous-painting-2.jpeg?resize=566%2C430&ssl=1"
+    },
+    {
+      "name": "Luncheon on the Boating Party",
+      "artist": "Pierre-Auguste Renoir",
+      "src": "https://i0.wp.com/bookmypainting.com/wp-content/uploads/2019/06/luncheon-on-the-boating-party-1.jpeg?resize=613%2C453&ssl=1"
+    },
+    {
+      "name": "Water Lilies",
+      "artist": "Claude Monet",
+      "src": "https://i0.wp.com/bookmypainting.com/wp-content/uploads/2019/06/the-lillies-the-famous-painting-2.jpeg?resize=515%2C428&ssl=1"
+    },
+    {
+      "name": "Landscape with the Fall of Icarus",
+      "artist": "Pieter Bruegel the Elder",
+      "src": "https://i0.wp.com/bookmypainting.com/wp-content/uploads/2019/06/landscape-with-full-of-icarus-2.jpeg?resize=594%2C380&ssl=1"
+    },
+    {
+      "name": "Las Meninas",
+      "artist": "Diego Velázquez",
+      "src": "https://i0.wp.com/bookmypainting.com/wp-content/uploads/2019/06/las-meninas-the-famous-painting-4.jpeg?resize=482%2C555&ssl=1"
+    },
+    {
+      "name": "Three Musicians",
+      "artist": "Pablo Picasso",
+      "src": "https://i0.wp.com/bookmypainting.com/wp-content/uploads/2019/06/three-musicians-the-famous-painting-2.jpeg?resize=536%2C484&ssl=1"
+    },
+    {
+      "name": "A Sunday Afternoon",
+      "artist": "Georges Seurat",
+      "src": "https://i0.wp.com/bookmypainting.com/wp-content/uploads/2019/06/a-sunday-afternoon-on-the-island-of-la-grande-jatt-2.jpeg?resize=596%2C397&ssl=1"
+    },
+    {
+      "name": "Impression, Sunrise",
+      "artist": "Claude Monet",
+      "src": "https://i0.wp.com/bookmypainting.com/wp-content/uploads/2019/06/impression-sunrise-1.jpeg?resize=581%2C466&ssl=1"
+    },
+    {
+      "name": "The Triumph of Galatea",
+      "artist": "Raphael",
+      "src": "https://i0.wp.com/bookmypainting.com/wp-content/uploads/2019/06/the-triumph-of-galatea-1.jpeg?resize=508%2C682&ssl=1"
+    },
+    {
+      "name": "The Tower of Babel",
+      "artist": "Pieter Bruegel",
+      "src": "https://i0.wp.com/bookmypainting.com/wp-content/uploads/2019/06/the-tower-of-babel-1.jpeg?resize=546%2C400&ssl=1"
+    },
+    {
+      "name": "The Dance",
+      "artist": "Henri Matisse",
+      "src": "https://i0.wp.com/bookmypainting.com/wp-content/uploads/2019/06/the-dance-1.jpeg?resize=588%2C384&ssl=1"
+    },
+    {
+      "name": "The Swing",
+      "artist": "Eugène Delacroix",
+      "src": "https://i0.wp.com/bookmypainting.com/wp-content/uploads/2019/06/the-swing-1.jpeg?resize=622%2C533&ssl=1"
+    },
+    {
+      "name": "The Gleaners",
+      "artist": "Jean-François Millet",
+      "src": "https://i0.wp.com/bookmypainting.com/wp-content/uploads/2019/06/tmp_b246d6314eeda2b17f7343fe74999f05-e1567749901783.gif?resize=607%2C428&ssl=1"
+    },
+    {
+      "name": "The Flower Carrier",
+      "artist": "Diego Rivera",
+      "src": "https://i0.wp.com/bookmypainting.com/wp-content/uploads/2019/06/the-flower-carrier-2.jpeg?resize=550%2C539&ssl=1"
+    },
+    {
+      "name": "The Kiss",
+      "artist": "Gustav Klimt",
+      "src": "https://i0.wp.com/bookmypainting.com/wp-content/uploads/2019/06/the-kiss-2.jpeg?resize=574%2C576&ssl=1"
+    },
+    {
+      "name": "Sans Barbe",
+      "artist": "Vincent van Gogh",
+      "src": "https://i0.wp.com/bookmypainting.com/wp-content/uploads/2019/06/1200px-Vincent_Willem_van_Gogh_102.jpg?resize=467%2C586&ssl=1"
+    },
+    {
+      "name": "Sans Barbe",
+      "artist": "Vincent van Gogh",
+      "src": "https://i0.wp.com/bookmypainting.com/wp-content/uploads/2019/06/1200px-Vincent_Willem_van_Gogh_102.jpg?resize=467%2C586&ssl=1"
+    },
+    {
+      "name": "Whistler’s Mother",
+      "artist": "James Abbott McNeill Whistler",
+      "src": "https://i0.wp.com/bookmypainting.com/wp-content/uploads/2019/06/whistlers-mother-2.jpeg?resize=554%2C493&ssl=1"
+    },
+    {
+      "name": "Bal du Moulin de la Galette",
+      "artist": "Pierre-Auguste Renoir",
+      "src": "https://i0.wp.com/bookmypainting.com/wp-content/uploads/2019/06/bal-du-moulin-de-la-galette-2.jpeg?resize=549%2C408&ssl=1"
+    },
+    {
+      "name": "The Son of Man",
+      "artist": "René Magritte",
+      "src": "https://i0.wp.com/bookmypainting.com/wp-content/uploads/2019/06/magritte1icon.jpg?resize=490%2C623&ssl=1"
+    },
+    {
+      "name": "Cafe Terrace at Night",
+      "artist": "Vincent van Gogh",
+      "src": "https://i0.wp.com/bookmypainting.com/wp-content/uploads/2019/06/cafe-terrace-at-night-2.jpeg?resize=514%2C645&ssl=1"
+    },
+
+    {
+      "name": "The Grand Odalisque",
+      "artist": "Jean Auguste Dominique Ingres",
+      "src": "https://i0.wp.com/bookmypainting.com/wp-content/uploads/2019/06/the-grand-odalisque-1.jpeg?resize=700%2C390&ssl=1"
+    },
+    {
+      "name": "The Liberty leading the people",
+      "artist": "Eugène Delacroix",
+      "src": "https://i0.wp.com/bookmypainting.com/wp-content/uploads/2019/06/the-liberty-leading-the-people-1.jpeg?resize=525%2C422&ssl=1"
+    },
+    {
+      "name": "Napoleon crossing the Alps",
+      "artist": "Jacques-Louis David",
+      "src": "https://i0.wp.com/bookmypainting.com/wp-content/uploads/2019/06/napoleon-crossing-the-alps-1.jpeg?resize=542%2C660&ssl=1"
+    }
+  ]
+}

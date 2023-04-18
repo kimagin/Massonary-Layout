@@ -5,8 +5,8 @@
 
 /* CSS Styles */
 :root {
-  font-family: "Inter", sans-serif;
-  letter-spacing: 0.1rem;
+  font-family: 'Inter', sans-serif;
+  line-height: 1rem;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -14,39 +14,71 @@
   -webkit-text-size-adjust: 100%;
 }
 
-* {
+*,
+*::after,
+*::before {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* Base classes */
+
 body {
-  @apply bg-zinc-900;
+  @apply bg-yellow-50;
 }
-
 h1 {
-  @apply text-slate-100 text-5xl;
+  @apply text-7xl font-bold font-serif tracking-tighter;
 }
 
-b {
-  @apply text-violet-500;
+/* Header */
+
+header {
+  @apply w-screen py-8;
 }
+.galleria {
+  @apply text-yellow-950 mx-auto w-fit;
+}
+
+/* Massonery */
+
 main {
-  @apply h-[100svh] flex flex-col justify-center items-center;
+  @apply container mx-auto;
 }
 
-section {
-  @apply text-center transition-opacity duration-[3s] ease-out;
+.massonary {
+  @apply grid-flow-dense;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
 }
 
-.logo {
-  @apply flex justify-center items-center space-x-6 mb-8;
+.grid-unit {
+  overflow: hidden;
 }
 
-.heading {
-  @apply mt-5 tracking-wide;
+/* .image {
+  @apply object-cover h-full w-full;
 }
 
-.footnote {
-  @apply mt-2 text-slate-300 font-thin tracking-widest;
+.image.horizontal {
+  @apply row-span-2 lg:col-span-2;
+}
+
+.image.vertical {
+  @apply lg:row-span-2;
+} */
+
+.grid-unit img {
+  object-fit: contain;
+  width: 100%;
+  height: 50%;
+}
+
+.grid-unit img.horizontal {
+  object-fit: cover;
+}
+
+.grid-unit img.vertical {
+  object-fit: contain;
 }

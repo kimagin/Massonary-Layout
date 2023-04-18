@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./index.html", "./src/**/*.{vue,js,ts,jsx,tsx}"],
+  content: ['./index.html', './js/**/*.{vue,js,ts,jsx,tsx}'],
   theme: {
     //Define Media queries
     /*screens: {
@@ -37,24 +37,24 @@ module.exports = {
       },*/
       //Create Custom Animations
       animation: {
-        "spin-slow": "spin 3s linear infinite",
+        'spin-slow': 'spin 3s linear infinite',
         //You can call the keyframes
-        bounce: "bounce 3s ease-in-out infinite",
+        bounce: 'bounce 3s ease-in-out infinite',
       },
 
       //Create custom Key-frames
       keyframes: {
         bounce: {
           //You can use css .style in js
-          "0%, 100%": {
-            transform: "scale(1.1)",
+          '0%, 100%': {
+            transform: 'scale(1.1)',
           },
-          "50%": {
-            transform: "scale(.9)",
+          '50%': {
+            transform: 'scale(.9)',
           },
         },
       },
     },
   },
   plugins: [],
-};
+}
