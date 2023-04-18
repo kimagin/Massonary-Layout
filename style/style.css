@@ -1,0 +1,52 @@
+/* Tailwind Directives : */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* CSS Styles */
+:root {
+  font-family: "Inter", sans-serif;
+  letter-spacing: 0.1rem;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  @apply bg-zinc-900;
+}
+
+h1 {
+  @apply text-slate-100 text-5xl;
+}
+
+b {
+  @apply text-violet-500;
+}
+main {
+  @apply h-[100svh] flex flex-col justify-center items-center;
+}
+
+section {
+  @apply text-center transition-opacity duration-[3s] ease-out;
+}
+
+.logo {
+  @apply flex justify-center items-center space-x-6 mb-8;
+}
+
+.heading {
+  @apply mt-5 tracking-wide;
+}
+
+.footnote {
+  @apply mt-2 text-slate-300 font-thin tracking-widest;
+}
