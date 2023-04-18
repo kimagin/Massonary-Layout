@@ -25,16 +25,22 @@ const initApp = async () => {
     return url
   }
 
-  //Determine Horizontal or Vertical
+  function createMassonary(column, post) {
+    const columns = []
+    for (let i = 0; i < column; i++) {
+      columns[`column${i}`] = []
+    }
 
-  const defineAspect = (image) => {
-    const dimensions = { width: image.width, height: image.height }
-    if (image.width < image.height) {
-      return 'horizontall'
-    } else {
-      return 'vertical'
+    console.log(columns)
+
+    for (let i = 1; i < post.images.length; i++) {
+      const clm = i % column
+      columns[`column${clm}`].push(post.images[i])
     }
   }
+
+  createMassonary(4, data)
+
   // Adding images to DOM
   data.images.forEach(async (image) => {
     // Fetching the image
@@ -49,16 +55,6 @@ const initApp = async () => {
     // Image container DOM element
     const imgContainer = document.createElement('div')
     imgContainer.classList.add('grid-unit')
-
-    //Checking if the image is horizontall or verticall
-
-    img.addEventListener('load', () => {
-      if (defineAspect(img) === 'horizontall') {
-        img.classList.add('vertical')
-      } else {
-        img.classList.add('horizontal')
-      }
-    })
 
     // Adding Image to it's container
     imgContainer.appendChild(img)

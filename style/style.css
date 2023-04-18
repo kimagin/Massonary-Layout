@@ -43,42 +43,11 @@ header {
 /* Massonery */
 
 main {
-  @apply container mx-auto;
+  @apply absolute top-[150px] left-0 w-full h-fit bg-black;
+}
+.column {
+  @apply w-full;
 }
 
 .massonary {
-  @apply grid-flow-dense;
-
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-}
-
-.grid-unit {
-  overflow: hidden;
-}
-
-/* .image {
-  @apply object-cover h-full w-full;
-}
-
-.image.horizontal {
-  @apply row-span-2 lg:col-span-2;
-}
-
-.image.vertical {
-  @apply lg:row-span-2;
-} */
-
-.grid-unit img {
-  object-fit: contain;
-  width: 100%;
-  height: 50%;
-}
-
-.grid-unit img.horizontal {
-  object-fit: cover;
-}
-
-.grid-unit img.vertical {
-  object-fit: contain;
 }
