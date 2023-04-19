@@ -21,46 +21,40 @@ const initApp = async () => {
   const fetchImage = async (source) => {
     const request = await fetch(source)
     const blob = await request.blob()
-    const url = URL.createObjectURL(blob)
-    return url
+    return URL.createObjectURL(blob)
   }
 
-  function createMassonary(column, post) {
-    const columns = []
+  function createMasonry(column, post) {
+    //Reset the container
+    select('.masonry').innerHTML = ''
+    const columns = {}
+
+    // Dividing Images into columns
     for (let i = 0; i < column; i++) {
       columns[`column${i}`] = []
     }
 
-    console.log(columns)
-
     for (let i = 1; i < post.images.length; i++) {
-      const clm = i % column
-      columns[`column${clm}`].push(post.images[i])
+      const position = i % column
+      columns[`column${position}`].push(post.images[i])
     }
+
+    //Create Empty Columns
+
+    Object.keys(columns).forEach((key) => {
+      const div = document.createElement('div')
+      div.classList.add(key, 'column')
+      select('.masonry').appendChild(div)
+      columns[key].forEach((item) => {
+        const img = document.createElement('img')
+        img.src = item.src
+        select(`.${key}`).appendChild(img)
+      })
+    })
+    select('.masonry').childNodes.forEach((col) => {})
   }
 
-  createMassonary(4, data)
-
-  // Adding images to DOM
-  data.images.forEach(async (image) => {
-    // Fetching the image
-    const imageBlob = await fetchImage(image.src)
-
-    // Adding Styles to the Unit
-
-    // Image DOM element
-    const img = document.createElement('img')
-    img.src = imageBlob
-    img.classList.add('image')
-    // Image container DOM element
-    const imgContainer = document.createElement('div')
-    imgContainer.classList.add('grid-unit')
-
-    // Adding Image to it's container
-    imgContainer.appendChild(img)
-    //Appending element inside the browser's massonary container
-    select('.massonary').appendChild(imgContainer)
-  })
+  createMasonry(4, data)
 }
 
 document.addEventListener('DOMContentLoaded', initApp)

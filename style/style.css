@@ -34,7 +34,7 @@ h1 {
 /* Header */
 
 header {
-  @apply w-screen py-8;
+  @apply py-[90px];
 }
 .galleria {
   @apply text-yellow-950 mx-auto w-fit;
@@ -43,11 +43,20 @@ header {
 /* Massonery */
 
 main {
-  @apply absolute top-[150px] left-0 w-full h-fit bg-black;
+  @apply absolute top-[250px] left-0 h-fit px-24 w-full;
 }
 .column {
-  @apply w-full;
+  @apply w-full space-y-4;
 }
 
-.massonary {
+.column img {
+  @apply w-full rounded-md;
+}
+
+.masonry {
+  @apply flex space-x-4 mx-auto container relative;
+}
+
+.fader {
+  @apply bg-gradient-to-t from-yellow-50 to-yellow-50/0 w-full h-screen absolute bottom-0 left-0;
 }
