@@ -24,37 +24,74 @@ const initApp = async () => {
     return URL.createObjectURL(blob)
   }
 
-  function createMasonry(column, post) {
+  async function createMasonry(column, post) {
     //Reset the container
     select('.masonry').innerHTML = ''
     const columns = {}
 
-    // Dividing Images into columns
+    // Dividing Images into columns based on the functions input
     for (let i = 0; i < column; i++) {
       columns[`column${i}`] = []
     }
 
-    for (let i = 1; i < post.images.length; i++) {
+    // Equaly divide the coumns into the array
+    for (let i = 1; i < (await post.images.length); i++) {
       const position = i % column
-      columns[`column${position}`].push(post.images[i])
+      columns[`column${position}`].push(await post.images[i])
     }
 
-    //Create Empty Columns
-
+    //Create & Populate the Columns
     Object.keys(columns).forEach((key) => {
       const div = document.createElement('div')
       div.classList.add(key, 'column')
       select('.masonry').appendChild(div)
-      columns[key].forEach((item) => {
+      columns[key].forEach(async (item, idx) => {
         const img = document.createElement('img')
-        img.src = item.src
+        if (idx > 10) {
+          img.loading = 'lazy'
+        }
+
+        img.src = await item.src
+
         select(`.${key}`).appendChild(img)
       })
     })
-    select('.masonry').childNodes.forEach((col) => {})
   }
 
-  createMasonry(4, data)
+  const media = {
+    sm: 640,
+    md: 768,
+    lg: 1024,
+    xl: 1280,
+  }
+
+  function generateColumnIndex() {
+    // Mobile
+    if (window.innerWidth < media.sm) {
+      return 1
+    }
+    // Tablet
+    else if (window.innerWidth < media.md && window.innerWidth >= media.sm) {
+      return 2
+    }
+    // Laptop
+    else if (window.innerWidth < media.lg && window.innerWidth >= media.md) {
+      return 3
+    }
+    // Desktop
+    else if (window.innerWidth >= media.lg) {
+      return 4
+    }
+  }
+
+  // Receive column number and the data to populate
+  createMasonry(generateColumnIndex(), data)
+  window.addEventListener(
+    'resize',
+    throttle(() => {
+      createMasonry(generateColumnIndex(), data)
+    }, 100) // Throttle speed
+  )
 }
 
 document.addEventListener('DOMContentLoaded', initApp)

@@ -43,14 +43,14 @@ header {
 /* Massonery */
 
 main {
-  @apply absolute top-[250px] left-0 h-fit px-24 w-full;
+  @apply absolute top-[200px] left-0 h-fit px-8 md:px-12 lg:px-24 w-full py-8;
 }
 .column {
   @apply w-full space-y-4;
 }
 
 .column img {
-  @apply w-full rounded-md;
+  @apply relative w-full rounded-md;
 }
 
 .masonry {
@@ -58,5 +58,5 @@ main {
 }
 
 .fader {
-  @apply bg-gradient-to-t from-yellow-50 to-yellow-50/0 w-full h-screen absolute bottom-0 left-0;
+  @apply bg-gradient-to-t from-yellow-50 to-yellow-50/0 w-full  bottom-0 left-0;
 }
