@@ -50,7 +50,9 @@ const initApp = async () => {
         if (idx > 10) {
           img.loading = 'lazy'
         }
-
+        if (idx === columns[key].length - 1) {
+          img.classList.add('last')
+        }
         img.src = await item.src
 
         select(`.${key}`).appendChild(img)

@@ -43,18 +43,18 @@ header {
 /* Massonery */
 
 main {
-  @apply absolute top-[200px] left-0 h-fit px-8 md:px-12 lg:px-24 w-full py-8;
+  @apply absolute top-[200px] left-0 h-fit px-8 md:px-6 lg:px-12 w-full py-8;
 }
 .column {
-  @apply w-full space-y-4;
+  @apply w-full space-y-6 h-max;
 }
 
 .column img {
-  @apply relative w-full rounded-md;
+  @apply relative w-full;
 }
 
 .masonry {
-  @apply flex space-x-4 mx-auto container relative;
+  @apply flex space-x-6 mx-auto container relative;
 }
 
 .fader {
